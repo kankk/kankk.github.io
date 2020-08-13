@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Hello Mangokk',
-  description: 'Mangokkkkkkkk',
+  title: 'Mangokk',
+  description: 'Mangokk Blog',
   // 用于修改内部的 Webpack 配置
   configureWebpack: {
 
@@ -11,25 +11,23 @@ module.exports = {
     // 导航栏
     nav: [
       {
-        text: "指南",
-        link: "/guide/",
-      },
-      {
-        text: "手册",
-        link: "/handbook/",
+        text: "文章",
+        link: "/articles/",
       },
     ],
     // 侧边栏
-    sidebar: [
-      {
-        title: '文章 1',
-        path: '/',
-      },
-      {
-        title: '文章 2',
-        path: '/'
-      }
-    ],
+    sidebar: {
+      '/articles': [
+        {
+          title: '文章1',
+          path: '/articles/article1.html',      
+        },
+        {
+          title: '文章2',
+          path: '/articles/article2.html',      
+        },
+      ]
+    },
     // 下一篇按钮
     nextLinks: false,
     // 上一篇按钮
